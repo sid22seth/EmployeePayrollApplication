@@ -131,7 +131,6 @@ select {
 }
 
 .submitButton {
-    border: none;
     background-color: #f5f5f5;
     margin-right: 30px;
 }
