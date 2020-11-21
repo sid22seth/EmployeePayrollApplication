@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href = "../css/EmployeePayrollorm.css" rel="stylesheet">
     <title>Employee Payroll form</title>
     <style></style>
@@ -10,7 +11,7 @@
 <body>
     <header class = "header-content header">
         <div class= "logo-content">
-        <img src="../assets/0.png" alt= "">
+        <img src="../assets/logo.png" alt= "">
         <div>
         <span class="emp-text">EMPLOYEE</span><br>
         <span class="emp-text" emp-payroll>PAYROLL</span>
@@ -24,6 +25,27 @@
         <div class="row-content">
         <label class="label text" for="name">Name</label>
         <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+        </div>
+        <div class="row-content">
+        <label class="label text" for="profile">Profile Image</label>
+        <div class="profile-radio-content">
+        <label>
+        <input type="radio" id="profile1" name="profile" value="/assets/assets/profile-images/Ellipse -3.png" required>
+        <img class="profile" id="image1" src="../assets/Ellipse -3.png">
+        </label>
+        <label>
+        <input type="radio" id="profile2" name="profile" value="/assets/assets/profile-images/Ellipse 1.png" required>
+        <img class="profile" id="image2" src="../assets/Ellipse -1.png">
+        </label>
+        <label>
+        <input type="radio" id="profile3" name="profile" value="/assets/assets/profile-images/Ellipse -8.png" required>
+        <img class="profile" id="image3" src="../assets/Ellipse -8.png">
+        </label>
+        <label>
+        <input type="radio" id="profile4" name="profile" value="/assets/Ellipse -7.png" required>
+        <img class="profile" id="image4" src="../assets/Ellipse -7.png">
+        </label>
+        </div>
         </div>
         </form>
     </div>
