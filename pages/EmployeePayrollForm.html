@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href = "../css/EmployeePayrollorm.css" rel="stylesheet">
     <script defer src="../js/EmployeePayroll.js"></script>
+    <script defer src="../js/EmployeePayrollClass.js"></script>
     <title>Employee Payroll form</title>
     <style></style>
 </head>
@@ -21,11 +22,12 @@
     </header>
     <div class = "form-content">
         <form class ="form" action="#"
-            onsubmit="save(); return false">
+            onsubmit="save()">
             <div class="form-head"> Employee Payroll Form</div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="profile">Profile Image</label>
@@ -141,12 +143,12 @@
         </div>
         <div class="row-content">
             <label class="label text" for="notes">Notes</label>
-            <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px;"></textarea>
+            <textarea id="notes" class="input" name="notes" placeholder="" style="height: 100px;"></textarea>
         </div>
         <div class="buttonParent">
             <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
             <div class="submit-reset">
-                <button type="submit" class="submitButton button" id="submitButton">Submit</button>
+                <button type= "submit" class="submitButton button" id="submitButton">Submit</button>
                 <button type="reset" class="resetButton button">Reset</button>
             </div>
         </div>
