@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 empPayrollList = getEmployeePayrollDataFromStorage();
 document.querySelector(".emp-count").textContent = empPayrollList.length;
 createInnerHtml();
+localStorage.removeItem('editEmp')
 });
 const getEmployeePayrollDataFromStorage = () => {
     return localStorage.getItem('EmployeePayrollList')?JSON.parse(localStorage.getItem('EmployeePayrollList')):[];
@@ -62,7 +63,7 @@ const getDeptHtml = (deptList) => {
     return deptHtml;
 }
 const remove = (node) => {
-    let empPayrollData = empPayrollList.find(empData => empData._id == node._id);
+    let empPayrollData = empPayrollList.find(empData => empData._id == node.id);
     if(!empPayrollData) return;
     const index = empPayrollList
                     .map(empData => empData._id)
@@ -72,3 +73,9 @@ const remove = (node) => {
     document.querySelector('.emp-count').textContent = empPayrollList.length;
     createInnerHtml();
 }
+const update = (node) => {
+    let empData = empPayrollList.find((emp) => emp._id == node.id);
+    if (!empData) return;
+    localStorage.setItem("editEmp", JSON.stringify(empData));
+    window.location.replace(site_properties.employee_payroll_page);
+};
