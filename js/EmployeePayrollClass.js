@@ -55,10 +55,10 @@ class EmployeePayrollData
         this._startDate = startDate;
     }
     get note(){
-        return this._notes;
+        return this._note;
     }
-    set note(notes){
-        this._note = notes;
+    set note(note){
+        this._note = note;
     }
     toString(){
         return  "Id = " + this._id + ",Name = "+this._name+", Salary = "+this._salary+" ,Gender = "+this._gender+ " ,Startdate = " + this._startDate + " ,Department = "+this._department+" ,Profile = "+this._profile+" ,Note = " + this._note;
