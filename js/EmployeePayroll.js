@@ -124,7 +124,7 @@ const setForm = () => {
     setSelectedValues('[name=department]', employeePayrollObj._department);
     setValue('#salary', employeePayrollObj._salary);
     setTextValue('.salary-output', employeePayrollObj._salary);
-    setValue('#notes', employeePayrollObj._notes);
+    setValue('#notes', employeePayrollObj._note);
     let date = stringifyDate(employeePayrollObj._startDate).split(" ");
     setValue('#day', date[0])
     setValue('#month', date[1])
