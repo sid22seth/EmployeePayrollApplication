@@ -16,7 +16,7 @@
             margin-top: 50px;
         }
     </style>
-    <script src="../Service/HttpServices.js"></script>
+    <script src="HttpServices.js"></script>
 </head>
 <body>
     <h1>The Test Service Results</h1>
@@ -25,8 +25,8 @@
     <div id="post_services"></div>
     <script>
         const getElement = document.querySelector("#get_services");
-        const getURL = "http://127.0.0.1:3000/employees/1";
-        makePromiseCall("GET", getURL, true)
+        const getURL = "http://127.0.0.1:4000/employees/1";
+        makeServiceCall("GET", getURL, true)
                .then(responseText => {
                    getElement.textContent = "Get User Data : "+ responseText;
                 })
@@ -35,8 +35,8 @@
                });
             
         const deleteElement = document.querySelector("#delete_services");
-        const deleteURL = "http://127.0.0.1:3000/employees/13";
-        makePromiseCall("DELETE", deleteURL, false)
+        const deleteURL = "http://127.0.0.1:4000/employees/13";
+        makeServiceCall("DELETE", deleteURL, false)
             .then(responseText => {
                 deleteElement.textContent = "Delete Data : "+ responseText;
             })
@@ -45,9 +45,9 @@
             });
         
         const postElement = document.querySelector("#post_services");
-        const postURL = "http://127.0.0.1:3000/employees";
+        const postURL = "http://127.0.0.1:4000/employees";
         const empData = {"name":"Samriddhi","salary":"90000"};
-        makePromiseCall("POST", postURL, true, empData)
+        makeServiceCall("POST", postURL, true, empData)
                .then(responseText => {
                    postElement.textContent = "User Added : "+ responseText;
                })

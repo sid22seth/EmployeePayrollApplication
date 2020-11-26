@@ -9,7 +9,7 @@ function makePromiseCall(methodType, url, async=true, data=null)
     return new Promise(function (resolve, reject)
     {
         let xhr = new XMLHttpRequest();
-        xhr.onload = function()
+        xhr.onreadystatechange = function()
         {
             //console.log(methodType + " State Changed called at: " + showTime() + "Ready state: " + xhr.readyState + " Status: " + xhr.status)
             if(xhr.status.toString().match("^[2][0-9]{2}$"))
@@ -36,7 +36,7 @@ function makePromiseCall(methodType, url, async=true, data=null)
     });
 }
 
-const getURL = "http://localhost:3000/employees/1";
+const getURL = "http://localhost:4000/employees/1";
 makePromiseCall("GET", getURL, true)
                .then(responseText => {
                 console.log("Get User Data at: " + showTime() + " Value: " + responseText);
@@ -44,7 +44,7 @@ makePromiseCall("GET", getURL, true)
                .catch(error => console.log("Get error status : "+ JSON.stringify(error)));
 console.log("Made GET Promise call to the server at " + showTime());
 
-const deleteURL = "http://localhost:3000/employees/13";
+const deleteURL = "http://localhost:4000/employees/13";
 makePromiseCall("DELETE", deleteURL, false)
             .then(responseText => {
                 console.log("User Deleted at: " + showTime() + "Value: "+ responseText);
@@ -52,7 +52,7 @@ makePromiseCall("DELETE", deleteURL, false)
             .catch(error => console.log("delete error status : "+ JSON.stringify(error)));
 console.log("Made DELETE Promise call to the server at " + showTime());
 
-const postURL = "http://localhost:3000/employees";
+const postURL = "http://localhost:4000/employees";
 const empData = {"name":"Siddhi","salary":"90000"};
 makePromiseCall("POST", postURL, true, empData)
                .then(responseText => {
