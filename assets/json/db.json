@@ -1,52 +1,66 @@
 {
-  "employee": [
+  "employees": [
     {
-      "name": "mohit kumar new",
-      "gender": "male",
+      "name": "Siddhi",
+      "gender": "female",
       "departMent": [
         "HR"
       ],
-      "salary": "30000",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589551457,
+      "salary": "300000",
+      "startDate": "1 Nov 2020",
+      "notes": "siddhi here",
+      "id": 1,
       "profileUrl": "../assets/profile-images/Ellipse 1.png"
     },
     {
-      "name": "mohit kumar test",
+      "name": "Ram Krishna",
       "gender": "male",
       "departMent": [
-        "HR"
+        "Finance"
       ],
-      "salary": "30000",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589594363,
-      "profileUrl": "../assets/profile-images/Ellipse 1.png"
+      "salary": "400000",
+      "startDate": "15 Nov 2020",
+      "notes": "ram here",
+      "id": 2,
+      "profileUrl": "../assets/profile-images/Ellipse -8.png"
     },
     {
-      "name": "mohit",
-      "gender": "male",
+      "name": "Divya",
+      "gender": "female",
       "departMent": [
-        "HR"
+        "HR",
+        "Engineer"
       ],
-      "salary": "30000",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589699566,
-      "profileUrl": "../assets/profile-images/Ellipse -3.png"
+      "salary": "400000",
+      "startDate": "18 Nov 2020",
+      "notes": "Divya here",
+      "id": 3,
+      "profileUrl": "../assets/profile-images/Ellipse -1.png"
     },
     {
-      "name": "test",
+      "name": "Samriddhi",
+      "gender": "female",
+      "departMent": [
+        "HR",
+        "Finance"
+      ],
+      "salary": "500000",
+      "startDate": "25 Nov 2020",
+      "notes": "samriddhi here",
+      "id": 4,
+      "profileUrl": "../assets/profile-images/Ellipse -7.png"
+    },
+    {
+      "name": "Prashant",
       "gender": "male",
       "departMent": [
-        "HR"
+        "Finance"
       ],
-      "salary": "30000",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589731061,
-      "profileUrl": "../assets/profile-images/Ellipse -3.png"
+      "salary": "400000",
+      "startDate": "7 Nov 2020",
+      "notes": "prashant here",
+      "profileUrl": "../assets/profile-images/Ellipse -3.png",
+      "id": 5
     }
   ]
 }

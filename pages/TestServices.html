@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ajax Services and Promise</title>
+    <style>
+        .body{margin: auto;}
+        div{
+            border: 1px solid black;
+            background-color: lightblue;
+            padding: 50px;
+            width: 80%;
+            margin-left: 5%;
+            font-size: large;
+            margin-top: 50px;
+        }
+    </style>
+    <script src="../js/httpServices.js"></script>
+</head>
+<body>
+    <h1>The Test Service Results</h1>
+    <div id="get_services"></div>
+    <div id="delete_services"></div>
+    <div id="post_services"></div>
+    <script>
+        const getElement = document.querySelector("#get_services");
+        const getURL = "http://127.0.0.1:4000/employees/1";
+        makeServiceCall("GET", getURL, true)
+               .then(responseText => {
+                   getElement.textContent = "Get User Data : "+ responseText;
+                })
+               .catch(error => {
+                   getElement.textContent = "Get error : "+ JSON.stringify(error);
+               });
+            
+        const deleteElement = document.querySelector("#delete_services");
+        const deleteURL = "http://127.0.0.1:4000/employees/5";
+        makeServiceCall("DELETE", deleteURL, false)
+            .then(responseText => {
+                deleteElement.textContent = "Delete Data : "+ responseText;
+            })
+            .catch(error => {
+                deleteElement.textContent = "delete error :"+ JSON.stringify(error);
+            });
+        
+        const postElement = document.querySelector("#post_services");
+        const postURL = "http://127.0.0.1:4000/employees";
+        const empData = 
+        {
+            "name": "Prashant",
+            "gender": "male",
+            "departMent": ["Finance"],
+            "salary": "400000",
+            "startDate": "7 Nov 2020",
+            "notes": "prashant here",
+            "profileUrl": "../assets/profile-images/Ellipse -3.png"
+        };
+        makeServiceCall("POST", postURL, true, empData)
+               .then(responseText => {
+                   postElement.textContent = "User Added : "+ responseText;
+               })
+            .catch(error => {
+                postElement.textContent = "Post error : "+ JSON.stringify(error);
+            });
+    </script>
+</body>
+</html>
