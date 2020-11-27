@@ -73,6 +73,7 @@ function createAndUpdateStorage(){
         employeePayrollList = [employeePayrollObj];
     }
     localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
+    alert(JSON.stringify(employeePayrollObj).toString());
 }
 const setEmployeePayrollObject = () => {
     if(!isUpdate && site_properties.use_local_storage.match("true"))

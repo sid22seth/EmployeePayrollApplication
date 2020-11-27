@@ -1,65 +1,65 @@
 {
   "employees": [
     {
-      "name": "Siddhi",
-      "gender": "female",
-      "departMent": [
+      "_name": "Siddhi",
+      "_gender": "female",
+      "_department": [
         "HR"
       ],
-      "salary": "300000",
-      "startDate": "1 Nov 2020",
-      "notes": "siddhi here",
+      "_salary": "300000",
+      "_startDate": "1 Nov 2020",
+      "_notes": "siddhi here",
       "id": 1,
-      "profileUrl": "../assets/profile-images/Ellipse 1.png"
+      "_profile": "../assets/profile-images/Ellipse -1.png"
     },
     {
-      "name": "Ram Krishna",
-      "gender": "male",
-      "departMent": [
+      "_name": "Ram Krishna",
+      "_gender": "male",
+      "_department": [
         "Finance"
       ],
-      "salary": "400000",
-      "startDate": "15 Nov 2020",
-      "notes": "ram here",
+      "_salary": "400000",
+      "_startDate": "15 Nov 2020",
+      "_notes": "ram here",
       "id": 2,
-      "profileUrl": "../assets/profile-images/Ellipse -8.png"
+      "_profile": "../assets/profile-images/Ellipse -8.png"
     },
     {
-      "name": "Divya",
-      "gender": "female",
-      "departMent": [
+      "_name": "Divya",
+      "_gender": "female",
+      "_department": [
         "HR",
         "Engineer"
       ],
-      "salary": "400000",
-      "startDate": "18 Nov 2020",
-      "notes": "Divya here",
+      "_salary": "400000",
+      "_startDate": "18 Nov 2020",
+      "_notes": "Divya here",
       "id": 3,
-      "profileUrl": "../assets/profile-images/Ellipse -1.png"
+      "_profile": "../assets/profile-images/Ellipse -1.png"
     },
     {
-      "name": "Samriddhi",
-      "gender": "female",
-      "departMent": [
+      "_name": "Samriddhi",
+      "_gender": "female",
+      "_department": [
         "HR",
         "Finance"
       ],
-      "salary": "500000",
-      "startDate": "25 Nov 2020",
-      "notes": "samriddhi here",
+      "_salary": "500000",
+      "_startDate": "25 Nov 2020",
+      "_notes": "samriddhi here",
       "id": 4,
-      "profileUrl": "../assets/profile-images/Ellipse -7.png"
+      "_profile": "../assets/profile-images/Ellipse -7.png"
     },
     {
-      "name": "Prashant",
-      "gender": "male",
-      "departMent": [
+      "_name": "Prashant",
+      "_gender": "male",
+      "_department": [
         "Finance"
       ],
-      "salary": "400000",
-      "startDate": "7 Nov 2020",
-      "notes": "prashant here",
-      "profileUrl": "../assets/profile-images/Ellipse -3.png",
+      "_salary": "400000",
+      "_startDate": "7 Nov 2020",
+      "_notes": "prashant here",
+      "_profile": "../assets/profile-images/Ellipse -3.png",
       "id": 5
     }
   ]
