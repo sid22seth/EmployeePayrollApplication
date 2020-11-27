@@ -1,45 +1,48 @@
 {
   "employees": [
     {
-      "_name": "Siddhi",
-      "_gender": "female",
+      "_name": "Siddhi Seth",
+      "_gender": "Female",
       "_department": [
         "HR"
       ],
-      "_salary": "300000",
+      "_salary": "488000",
       "_startDate": "1 Nov 2020",
       "_notes": "siddhi here",
       "id": 1,
-      "_profile": "../assets/profile-images/Ellipse -1.png"
+      "_profile": "/assets/profile-images/Ellipse -1.png",
+      "_note": "siddhi here"
     },
     {
-      "_name": "Ram Krishna",
-      "_gender": "male",
+      "_name": "Ram Krishna Gupta",
+      "_gender": "Male",
       "_department": [
         "Finance"
       ],
-      "_salary": "400000",
+      "_salary": "465000",
       "_startDate": "15 Nov 2020",
       "_notes": "ram here",
       "id": 2,
-      "_profile": "../assets/profile-images/Ellipse -8.png"
+      "_profile": "/assets/profile-images/Ellipse -3.png",
+      "_note": "ram here"
     },
     {
-      "_name": "Divya",
-      "_gender": "female",
+      "_name": "Divya Seth",
+      "_gender": "Female",
       "_department": [
         "HR",
         "Engineer"
       ],
       "_salary": "400000",
-      "_startDate": "18 Nov 2020",
+      "_startDate": "2020-11-17T18:30:00.000Z",
       "_notes": "Divya here",
       "id": 3,
-      "_profile": "../assets/profile-images/Ellipse -1.png"
+      "_profile": "/assets/profile-images/Ellipse -1.png",
+      "_note": "divya here"
     },
     {
-      "_name": "Samriddhi",
-      "_gender": "female",
+      "_name": "Samriddhi Seth",
+      "_gender": "Female",
       "_department": [
         "HR",
         "Finance"
@@ -48,19 +51,59 @@
       "_startDate": "25 Nov 2020",
       "_notes": "samriddhi here",
       "id": 4,
-      "_profile": "../assets/profile-images/Ellipse -7.png"
+      "_profile": "/assets/profile-images/Ellipse -1.png"
     },
     {
-      "_name": "Prashant",
-      "_gender": "male",
+      "_name": "Prashant Seth",
+      "_gender": "Male",
       "_department": [
         "Finance"
       ],
       "_salary": "400000",
       "_startDate": "7 Nov 2020",
       "_notes": "prashant here",
-      "_profile": "../assets/profile-images/Ellipse -3.png",
-      "id": 5
+      "_profile": "/assets/profile-images/Ellipse -3.png",
+      "id": 5,
+      "_note": "prashant here"
+    },
+    {
+      "_name": "Aditya Singh",
+      "_profile": "/assets/profile-images/Ellipse -8.png",
+      "_gender": "Male",
+      "_department": [
+        "Finance",
+        "Engineer"
+      ],
+      "_salary": "483300",
+      "_notes": "Aditya here",
+      "_startDate": "18 Nov 2020",
+      "id": 6
+    },
+    {
+      "_name": "Ridhi Agarwal",
+      "_profile": "/assets/profile-images/Ellipse -7.png",
+      "_gender": "Female",
+      "_department": [
+        "HR"
+      ],
+      "_salary": "400000",
+      "_notes": "Ridhi here",
+      "_startDate": "18 Nov 2020",
+      "id": 7
+    },
+    {
+      "_name": "Shubhi Kastwar",
+      "_profile": "/assets/profile-images/Ellipse -7.png",
+      "_gender": "Female",
+      "_department": [
+        "HR",
+        "Sales",
+        "Finance"
+      ],
+      "_salary": "468100",
+      "_notes": "shubhi here",
+      "_startDate": "8 Nov 2020",
+      "id": 8
     }
   ]
 }

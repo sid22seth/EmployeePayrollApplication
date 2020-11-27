@@ -38,19 +38,43 @@ window.addEventListener('DOMContentLoaded',(event) => {
     checkForUpdate();
 });
 
-function save(event){
+function save(event)
+{
     event.preventDefault();
     event.stopPropagation();
     try{    
         setEmployeePayrollObject();
-        createAndUpdateStorage();
-        resetForm();
-        window.location.replace(site_properties.home_page)
+        if (site_properties.use_local_storage.match("true")) {
+            createAndUpdateStorage();
+            resetForm();
+            window.location.replace(site_properties.home_page);
+        } 
+        else {
+            createOrUpdateEmployeePayroll();
+            resetForm();
+            window.location.replace(site_properties.home_page);    
+        }
     }
     catch(e)
     {
         return;
     }
+}
+const createOrUpdateEmployeePayroll = () =>  {    
+    let postURL = site_properties.server_url;
+    let methodCall = "POST";
+    if(isUpdate) 
+    {
+        methodCall = "PUT";
+        postURL = postURL + "/" + employeePayrollObj.id.toString();
+    }
+    makeServiceCall(methodCall, postURL, true, employeePayrollObj)
+      .then(responseText => {
+          alert(JSON.stringify(responseText).toString());
+      })
+      .catch(error => {
+        throw error;
+      });
 }
 function createAndUpdateStorage(){
     let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
@@ -96,12 +120,12 @@ const setEmployeePayrollObject = () => {
     employeePayrollObj._gender = getSelectedValues('[name=gender]').pop();
     employeePayrollObj._department = getSelectedValues('[name=department]');
     employeePayrollObj._salary = getInputValueById('#salary');
-    employeePayrollObj._note = getInputValueById('#notes');
+    employeePayrollObj._notes = getInputValueById('#notes');
     let date = getInputValueById('#year') + " "+ getInputValueById('#month') + " " + getInputValueById('#day');
     try 
     {
         checkStartDate(new Date(Date.parse(date)));
-        employeePayrollObj._startDate = new Date(date);
+        employeePayrollObj._startDate = stringifyDate(date);
         setTextValue('.date-error', " ");
     } 
     catch (e) 
@@ -124,7 +148,7 @@ const setForm = () => {
     setSelectedValues('[name=department]', employeePayrollObj._department);
     setValue('#salary', employeePayrollObj._salary);
     setTextValue('.salary-output', employeePayrollObj._salary);
-    setValue('#notes', employeePayrollObj._note);
+    setValue('#notes', employeePayrollObj._notes);
     let date = stringifyDate(employeePayrollObj._startDate).split(" ");
     setValue('#day', date[0])
     setValue('#month', date[1])

@@ -49,13 +49,13 @@ class EmployeePayrollData
             throw 'Start Date is beyond 30 days';
         this._startDate = startDate;
     }
-    get note(){
+    get notes(){
         return this._note;
     }
-    set note(note){
-        this._note = note;
+    set notes(notes){
+        this._notes = notes;
     }
     toString(){
-        return  "Id = " + this._id + ",Name = "+this._name+", Salary = "+this._salary+" ,Gender = "+this._gender+ " ,Startdate = " + this._startDate + " ,Department = "+this._department+" ,Profile = "+this._profile+" ,Note = " + this._note;
+        return  "Id = " + this._id + ",Name = "+this._name+", Salary = "+this._salary+" ,Gender = "+this._gender+ " ,Startdate = " + this._startDate + " ,Department = "+this._department+" ,Profile = "+this._profile+" ,Notes = " + this._notes;
     }
 }
