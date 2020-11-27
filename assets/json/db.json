@@ -90,20 +90,6 @@
       "_notes": "Ridhi here",
       "_startDate": "18 Nov 2020",
       "id": 7
-    },
-    {
-      "_name": "Shubhi Kastwar",
-      "_profile": "/assets/profile-images/Ellipse -7.png",
-      "_gender": "Female",
-      "_department": [
-        "HR",
-        "Sales",
-        "Finance"
-      ],
-      "_salary": "468100",
-      "_notes": "shubhi here",
-      "_startDate": "8 Nov 2020",
-      "id": 8
     }
   ]
 }
