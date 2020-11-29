@@ -4,7 +4,9 @@
       "_name": "Siddhi Seth",
       "_gender": "Female",
       "_department": [
-        "HR"
+        "HR",
+        "Finance",
+        "Engineer"
       ],
       "_salary": "488000",
       "_startDate": "1 Nov 2020",
